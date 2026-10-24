@@ -1,0 +1,24 @@
+МОДЕЛИ
+Qwen/Qwen2-VL-2B-Instruct, Qwen Team, Apache License 2.0.
+https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
+Qwen/Qwen3-VL-2B-Instruct, Qwen Team, Apache License 2.0.
+https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
+Полный текст Apache License 2.0 приложен в models/Qwen2-VL-2B-NF4/LICENSE
+полного архива; страницы README моделей и ревизии сохранены рядом с весами.
+
+ДАННЫЕ
+UkrainianCatholicUniversity/rukopys, Ukrainian Catholic University и участники
+набора, Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys
+https://creativecommons.org/licenses/by/4.0/
+Изменения: выбор и обрезка размеченных областей, уменьшение размера, белое поле,
+сохранение JPEG. Координаты и исходные документы: data/provenance.json.
+
+СРЕДА
+Python 3.12.10 (PSF License), PyTorch 2.7.1 (BSD-style), Transformers 4.57.1
+(Apache 2.0) и другие библиотеки распространяются с исходными лицензиями
+в .runtime/ и .runtime/Lib/site-packages/*dist-info/. Не удаляйте их при передаче.
+CUDA-библиотеки в официальном колесе PyTorch распространяются на условиях NVIDIA;
+документы правообладателей сохранены в составе Torch.
+
+Модификация весов в версии 2: NF4 с двойным квантованием линейных слоёв декодера, visual/lm_head сохранены в FP16. Обучения нет. Ревизии и контрольные суммы оригиналов записаны в download-manifest.json рядом с каждой моделью.

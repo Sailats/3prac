@@ -1,0 +1,18 @@
+[
+  {
+    "source_file": "images/7886ba12-2bb5-4cdb-b109-dffb18afc519.jpg",
+    "reason": "Partial scanner watermark; retain only one full watermark example"
+  },
+  {
+    "source_file": "images/3e7b4eb1-92e3-41d4-928d-b23d112558d2.jpg",
+    "reason": "Repeated scanner watermark"
+  },
+  {
+    "source_file": "images/d0273ef9-34ef-502b-b2b8-4dcc9992ca5e.jpg",
+    "reason": "Near duplicate of the sticker visible in another document"
+  },
+  {
+    "source_file": "images/d2df1b5e-ca2f-47a2-90cb-3d93a05b6efd.jpg",
+    "reason": "Visually ambiguous cursive header with handwritten date; excluded before any model evaluation"
+  }
+]

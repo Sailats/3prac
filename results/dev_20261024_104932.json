@@ -1,0 +1,405 @@
+{
+  "created_utc": "2026-10-24T10:49:32.196996+00:00",
+  "split": "dev",
+  "prompt": "Is this text handwritten or printed? Answer with only handwritten or printed. If there is no text or both types are present, answer unknown.",
+  "prompt_sha256": "3e6745b825910e13d17318ce0bc6006c2dc391f85cb20996f88eeaaf173ab5b2",
+  "manifest_sha256": "3fd5474f86c7927582ed736c81575b16541edeff013b7233ad6b01eb23f198e0",
+  "settings": {
+    "max_side": 1024,
+    "max_new_tokens": 12,
+    "do_sample": false,
+    "warmup": "one dev image per model",
+    "order": "alternating",
+    "quantization": "decoder NF4 double; vision FP16; compute FP16 on CUDA",
+    "visual_token_limit": 512,
+    "evaluation_note": "Repeat comparison on the existing 40 images after replacing SmolVLM; the test set has been used before. A shared shorter prompt was selected on dev; labels and images unchanged."
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.7.1+cu118",
+    "transformers": "4.57.1",
+    "platform": "Windows-11-10.0.28000-SP0",
+    "gpu": "NVIDIA GeForce RTX 2060 SUPER"
+  },
+  "models": {
+    "2B": {
+      "name": "Qwen2-VL 2B",
+      "repo": "Qwen/Qwen2-VL-2B-Instruct",
+      "revision": "895c3a49bc3fa70a340399125c650a463535e71c"
+    },
+    "Q3": {
+      "name": "Qwen3-VL 2B",
+      "repo": "Qwen/Qwen3-VL-2B-Instruct",
+      "revision": "89644892e4d85e24eaac8bacfd4f463576704203"
+    }
+  },
+  "warmup": {
+    "2B": {
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 11.7321,
+      "generation_seconds": 0.8316,
+      "load_seconds": 5.0378,
+      "device": "cuda",
+      "error": null
+    },
+    "Q3": {
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 3.9225,
+      "generation_seconds": 0.3584,
+      "load_seconds": 3.5263,
+      "device": "cuda",
+      "error": null
+    }
+  },
+  "metrics": {
+    "2B": {
+      "n": 10,
+      "accuracy": 0.5,
+      "coverage": 0.9,
+      "macro_f1": 0.35714285714285715,
+      "classes": {
+        "handwritten": {
+          "precision": 0.5555555555555556,
+          "recall": 1.0,
+          "f1": 0.7142857142857143,
+          "support": 5
+        },
+        "printed": {
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0,
+          "support": 5
+        }
+      },
+      "confusion": {
+        "handwritten": {
+          "handwritten": 5,
+          "printed": 0,
+          "unknown": 0,
+          "invalid": 0,
+          "error": 0
+        },
+        "printed": {
+          "handwritten": 4,
+          "printed": 0,
+          "unknown": 0,
+          "invalid": 1,
+          "error": 0
+        }
+      },
+      "unknown": 0,
+      "invalid": 1,
+      "errors": 0,
+      "mean_seconds": 0.3481,
+      "median_seconds": 0.34809999999999997
+    },
+    "Q3": {
+      "n": 10,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "macro_f1": 1.0,
+      "classes": {
+        "handwritten": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        },
+        "printed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        }
+      },
+      "confusion": {
+        "handwritten": {
+          "handwritten": 5,
+          "printed": 0,
+          "unknown": 0,
+          "invalid": 0,
+          "error": 0
+        },
+        "printed": {
+          "handwritten": 0,
+          "printed": 5,
+          "unknown": 0,
+          "invalid": 0,
+          "error": 0
+        }
+      },
+      "unknown": 0,
+      "invalid": 0,
+      "errors": 0,
+      "mean_seconds": 0.31277,
+      "median_seconds": 0.3182
+    }
+  },
+  "predictions": [
+    {
+      "id": "p01",
+      "file": "images/p01.jpg",
+      "truth": "printed",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3868,
+      "generation_seconds": 0.3701,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p01",
+      "file": "images/p01.jpg",
+      "truth": "printed",
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 0.2793,
+      "generation_seconds": 0.2588,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p02",
+      "file": "images/p02.jpg",
+      "truth": "printed",
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 0.2582,
+      "generation_seconds": 0.2507,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p02",
+      "file": "images/p02.jpg",
+      "truth": "printed",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3367,
+      "generation_seconds": 0.3286,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p03",
+      "file": "images/p03.jpg",
+      "truth": "printed",
+      "model": "2B",
+      "label": "invalid",
+      "raw": "print",
+      "seconds": 0.2868,
+      "generation_seconds": 0.2738,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p03",
+      "file": "images/p03.jpg",
+      "truth": "printed",
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 0.2573,
+      "generation_seconds": 0.2469,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p04",
+      "file": "images/p04.jpg",
+      "truth": "printed",
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 0.2533,
+      "generation_seconds": 0.2474,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p04",
+      "file": "images/p04.jpg",
+      "truth": "printed",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3427,
+      "generation_seconds": 0.3356,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p05",
+      "file": "images/p05.jpg",
+      "truth": "printed",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3477,
+      "generation_seconds": 0.3382,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p05",
+      "file": "images/p05.jpg",
+      "truth": "printed",
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 0.2561,
+      "generation_seconds": 0.2473,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h01",
+      "file": "images/h01.jpg",
+      "truth": "handwritten",
+      "model": "Q3",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3571,
+      "generation_seconds": 0.3474,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h01",
+      "file": "images/h01.jpg",
+      "truth": "handwritten",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.365,
+      "generation_seconds": 0.3521,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h02",
+      "file": "images/h02.jpg",
+      "truth": "handwritten",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3632,
+      "generation_seconds": 0.3506,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h02",
+      "file": "images/h02.jpg",
+      "truth": "handwritten",
+      "model": "Q3",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3664,
+      "generation_seconds": 0.352,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h03",
+      "file": "images/h03.jpg",
+      "truth": "handwritten",
+      "model": "Q3",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3621,
+      "generation_seconds": 0.3543,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h03",
+      "file": "images/h03.jpg",
+      "truth": "handwritten",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3476,
+      "generation_seconds": 0.337,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h04",
+      "file": "images/h04.jpg",
+      "truth": "handwritten",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3485,
+      "generation_seconds": 0.3396,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h04",
+      "file": "images/h04.jpg",
+      "truth": "handwritten",
+      "model": "Q3",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3664,
+      "generation_seconds": 0.355,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h05",
+      "file": "images/h05.jpg",
+      "truth": "handwritten",
+      "model": "Q3",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3715,
+      "generation_seconds": 0.3652,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h05",
+      "file": "images/h05.jpg",
+      "truth": "handwritten",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.356,
+      "generation_seconds": 0.3465,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    }
+  ],
+  "report_file": "dev_20261024_104932.json"
+}

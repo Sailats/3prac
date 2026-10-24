@@ -1,0 +1,107 @@
+[
+  {
+    "prompt_name": "describe",
+    "prompt": "Describe how the text looks. Is it handwritten or printed? Explain briefly.",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "The text is printed. It is written in blue ink on a white background, with a patterned border."
+  },
+  {
+    "prompt_name": "describe",
+    "prompt": "Describe how the text looks. Is it handwritten or printed? Explain briefly.",
+    "id": "p02",
+    "truth": "printed",
+    "raw": "The text is printed."
+  },
+  {
+    "prompt_name": "describe",
+    "prompt": "Describe how the text looks. Is it handwritten or printed? Explain briefly.",
+    "id": "p04",
+    "truth": "printed",
+    "raw": "The text is handwritten."
+  },
+  {
+    "prompt_name": "describe",
+    "prompt": "Describe how the text looks. Is it handwritten or printed? Explain briefly.",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "The text is handwritten."
+  },
+  {
+    "prompt_name": "describe",
+    "prompt": "Describe how the text looks. Is it handwritten or printed? Explain briefly.",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "The text is handwritten."
+  },
+  {
+    "prompt_name": "simple",
+    "prompt": "Is this text printed or handwritten?",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "The text in the image is printed."
+  },
+  {
+    "prompt_name": "simple",
+    "prompt": "Is this text printed or handwritten?",
+    "id": "p02",
+    "truth": "printed",
+    "raw": "The text in the image is printed."
+  },
+  {
+    "prompt_name": "simple",
+    "prompt": "Is this text printed or handwritten?",
+    "id": "p04",
+    "truth": "printed",
+    "raw": "This text is printed."
+  },
+  {
+    "prompt_name": "simple",
+    "prompt": "Is this text printed or handwritten?",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "The text in the image appears to be handwritten."
+  },
+  {
+    "prompt_name": "simple",
+    "prompt": "Is this text printed or handwritten?",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "The text in the image is handwritten."
+  },
+  {
+    "prompt_name": "rules",
+    "prompt": "Look at the letter shapes, not the meaning or language. Printed text has regular, repeated letter shapes and consistent spacing, including printed italic fonts and digital timestamps. Handwritten text has irregular strokes made by a pen or pencil. Which type is in the image? Reply with exactly printed or handwritten.",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "Printed"
+  },
+  {
+    "prompt_name": "rules",
+    "prompt": "Look at the letter shapes, not the meaning or language. Printed text has regular, repeated letter shapes and consistent spacing, including printed italic fonts and digital timestamps. Handwritten text has irregular strokes made by a pen or pencil. Which type is in the image? Reply with exactly printed or handwritten.",
+    "id": "p02",
+    "truth": "printed",
+    "raw": "Printed"
+  },
+  {
+    "prompt_name": "rules",
+    "prompt": "Look at the letter shapes, not the meaning or language. Printed text has regular, repeated letter shapes and consistent spacing, including printed italic fonts and digital timestamps. Handwritten text has irregular strokes made by a pen or pencil. Which type is in the image? Reply with exactly printed or handwritten.",
+    "id": "p04",
+    "truth": "printed",
+    "raw": "Printed"
+  },
+  {
+    "prompt_name": "rules",
+    "prompt": "Look at the letter shapes, not the meaning or language. Printed text has regular, repeated letter shapes and consistent spacing, including printed italic fonts and digital timestamps. Handwritten text has irregular strokes made by a pen or pencil. Which type is in the image? Reply with exactly printed or handwritten.",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "Handwritten"
+  },
+  {
+    "prompt_name": "rules",
+    "prompt": "Look at the letter shapes, not the meaning or language. Printed text has regular, repeated letter shapes and consistent spacing, including printed italic fonts and digital timestamps. Handwritten text has irregular strokes made by a pen or pencil. Which type is in the image? Reply with exactly printed or handwritten.",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "Handwritten"
+  }
+]

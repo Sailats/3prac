@@ -1,0 +1,879 @@
+{
+  "dataset": "UkrainianCatholicUniversity/rukopys",
+  "revision": "aaebe5290a3ae7ea8a2fa77cf31bb872761c7310",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "authors": "Ukrainian Catholic University, rukopys dataset contributors",
+  "seed": 20261024,
+  "selection": [
+    {
+      "id": "p01",
+      "label": "printed",
+      "split": "dev",
+      "source_file": "images/1a08aa19-6b02-4d80-9977-9932971e930f.jpg",
+      "bbox": [
+        118,
+        53,
+        1158,
+        186
+      ],
+      "annotation_source": "annotator",
+      "source_text": "27 жовтня День української",
+      "file": "images/p01.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/1a08aa19-6b02-4d80-9977-9932971e930f.jpg",
+      "sha256": "48f85be5de4c6f9df643274a8a005c657fc9f328d2a20e9e792f88992a65f4d7"
+    },
+    {
+      "id": "p02",
+      "label": "printed",
+      "split": "dev",
+      "source_file": "images/a07652e6-9311-56dc-ac46-6ef7cb4f44a2.jpg",
+      "bbox": [
+        3136,
+        2793,
+        3878,
+        2861
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "2022/4/15 16:45",
+      "file": "images/p02.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/a07652e6-9311-56dc-ac46-6ef7cb4f44a2.jpg",
+      "sha256": "d5c6d89dd2c6d21efa41680cc2b4faa4f6a657b642536d222b0f778d67a6fea1"
+    },
+    {
+      "id": "p03",
+      "label": "printed",
+      "split": "dev",
+      "source_file": "images/01128e85-1644-402a-a374-7292eb1db593.jpg",
+      "bbox": [
+        427,
+        102,
+        1588,
+        203
+      ],
+      "annotation_source": "annotator",
+      "source_text": "Всеукраїнський радіодиктант",
+      "file": "images/p03.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/01128e85-1644-402a-a374-7292eb1db593.jpg",
+      "sha256": "751350ec755a235fc3401598ac86e23215f5f15bc2f29aaa908d964b041c6e3c"
+    },
+    {
+      "id": "p04",
+      "label": "printed",
+      "split": "dev",
+      "source_file": "images/5468e01f-8f92-5b15-a43d-e1c1269b0b64.jpg",
+      "bbox": [
+        141,
+        112,
+        1167,
+        149
+      ],
+      "annotation_source": "annotator",
+      "source_text": "невідомих хлопців схвилювала уяву А. Ліндґрен, тому вона вирішила",
+      "file": "images/p04.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/5468e01f-8f92-5b15-a43d-e1c1269b0b64.jpg",
+      "sha256": "0468624600a09a914c1959e885d957faf224b6f2c9aea3f54b153c241bafd859"
+    },
+    {
+      "id": "p05",
+      "label": "printed",
+      "split": "dev",
+      "source_file": "images/16746ce6-75e4-57ea-b842-2a86f2d898e7.jpg",
+      "bbox": [
+        214,
+        163,
+        1054,
+        213
+      ],
+      "annotation_source": "annotator",
+      "source_text": "Мал. 179. Будова органів розмноження сосни звичайної: 1 — чоловіча шишка; 2 — жіночі",
+      "file": "images/p05.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/16746ce6-75e4-57ea-b842-2a86f2d898e7.jpg",
+      "sha256": "ea8788f0366aaef22c2b524135c4e22b9f506e1778679874b0afe1732b879fca"
+    },
+    {
+      "id": "p06",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/da379a5e-144c-4b27-aca2-88db0b3f2b60.jpg",
+      "bbox": [
+        320,
+        943,
+        1467,
+        1010
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "За Управляючого Распорядчим",
+      "file": "images/p06.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/da379a5e-144c-4b27-aca2-88db0b3f2b60.jpg",
+      "sha256": "f367a1b54db86da8f1ba8e80067d08d1877a4cc3cd1d9cd1dbdf13b20fde1898"
+    },
+    {
+      "id": "p07",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/e86a317d-5cd6-546c-8cfd-41dde7029e47.jpg",
+      "bbox": [
+        746,
+        130,
+        1705,
+        265
+      ],
+      "annotation_source": "annotator",
+      "source_text": "§ 43. Плауни, хвощі, папороті",
+      "file": "images/p07.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/e86a317d-5cd6-546c-8cfd-41dde7029e47.jpg",
+      "sha256": "b2b096577948c34860cb72e8bb8a62c5e0dd43260d0ae617bdea18ab8b33720a"
+    },
+    {
+      "id": "p08",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/98ee683c-efa8-5bf0-8dc5-4a1417535b83.jpg",
+      "bbox": [
+        161,
+        157,
+        516,
+        214
+      ],
+      "annotation_source": "annotator",
+      "source_text": "У мене все клеїться",
+      "file": "images/p08.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/98ee683c-efa8-5bf0-8dc5-4a1417535b83.jpg",
+      "sha256": "f0524a231f5dcdac12f2ecc7490eabd87c25c98c5cc43ddd37582039c2955d6c"
+    },
+    {
+      "id": "p09",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/e6757ef2-bbcf-525f-af00-cb65d7ace012.jpg",
+      "bbox": [
+        160,
+        397,
+        1615,
+        513
+      ],
+      "annotation_source": "annotator",
+      "source_text": "вибачень, які свідчать про її багатство, про високу духовність її носіїв, і",
+      "file": "images/p09.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/e6757ef2-bbcf-525f-af00-cb65d7ace012.jpg",
+      "sha256": "802a35129557f1a0e162764e13df0ff2b922862aa2ccc56f351f8963f2867055"
+    },
+    {
+      "id": "p10",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/02db72db-f61d-5bfd-8305-6fc15d35460e.jpg",
+      "bbox": [
+        1280,
+        251,
+        2086,
+        348
+      ],
+      "annotation_source": "annotator",
+      "source_text": "світовій літературі\" (Мю Якубець, Польща",
+      "file": "images/p10.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/02db72db-f61d-5bfd-8305-6fc15d35460e.jpg",
+      "sha256": "650a28758443a84ba25129db2a3538448672b774f03368da385e81ece37bdd48"
+    },
+    {
+      "id": "p11",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/430dc905-bd15-4386-a674-dc32b8a40fce.jpg",
+      "bbox": [
+        782,
+        2226,
+        1618,
+        2318
+      ],
+      "annotation_source": "annotator",
+      "source_text": "Scanned with CamScanner",
+      "file": "images/p11.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/430dc905-bd15-4386-a674-dc32b8a40fce.jpg",
+      "sha256": "a40326a1e990730a1f206f88b9b5faf6cf7042baa4c6562ee0810417672de361"
+    },
+    {
+      "id": "p12",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/7101e1d4-7ba4-5ecb-8e6f-130d0439ca3e.jpg",
+      "bbox": [
+        998,
+        50,
+        1996,
+        277
+      ],
+      "annotation_source": "annotator",
+      "source_text": ". 4. Ось сопілка захурчала, дві ноти, змінюючи",
+      "file": "images/p12.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/7101e1d4-7ba4-5ecb-8e6f-130d0439ca3e.jpg",
+      "sha256": "28b47077ca6e002ba083986cd2968bf563cd8cae7b01e39d05b9a82c4ee430bf"
+    },
+    {
+      "id": "p13",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/964a31fc-0bee-5096-9359-2371641869eb.jpg",
+      "bbox": [
+        3080,
+        8063,
+        9570,
+        8482
+      ],
+      "annotation_source": "annotator",
+      "source_text": "160° 140° 120° 100° 80° на захід від Гринвіча 0° на схід від Гринвіча 80° 100° 120° 140° 160° 180°",
+      "file": "images/p13.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/964a31fc-0bee-5096-9359-2371641869eb.jpg",
+      "sha256": "646ce4c4963bef64ca4bdae116e2194feebec7200dad976a026c18ac2e845c35"
+    },
+    {
+      "id": "p14",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/24d67fd9-4cb4-46b6-acc4-de94ddff93ba.jpg",
+      "bbox": [
+        3535,
+        221,
+        5026,
+        868
+      ],
+      "annotation_source": "annotator",
+      "source_text": "ДТЕУ\nФАКУЛЬТЕТ\nФІНАНСІВ ТА ОБЛІКУ\nДЕННО ФЕРМА НАВЧАННЯ",
+      "file": "images/p14.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/24d67fd9-4cb4-46b6-acc4-de94ddff93ba.jpg",
+      "sha256": "077cd8811a050041fb01f5fc947c51057d87a7df560f242cbe2052e4be40592b"
+    },
+    {
+      "id": "p15",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/d8f4b4b8-e221-55d5-b3f1-1d142b684826.jpg",
+      "bbox": [
+        0,
+        7,
+        984,
+        183
+      ],
+      "annotation_source": "annotator",
+      "source_text": "озганяв густі хмари ,і Марія подумала ,що",
+      "file": "images/p15.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/d8f4b4b8-e221-55d5-b3f1-1d142b684826.jpg",
+      "sha256": "6ac2792de7563e2ca4c7e5e4bf0c1296405d53c5fe32f84092593bfde97cb15f"
+    },
+    {
+      "id": "p16",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/a148fed5-320e-59bc-a30d-12324def3390.jpg",
+      "bbox": [
+        616,
+        864,
+        2374,
+        919
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "сміттєзвалищ для аналізу їхнього хімічного складу та вмісту шкідливих",
+      "file": "images/p16.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/a148fed5-320e-59bc-a30d-12324def3390.jpg",
+      "sha256": "2470b3658b7df9867b9168e04555ca23d074e479cd1b65824488b9131f0f2a06"
+    },
+    {
+      "id": "p17",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/276f9e4a-cd02-5eac-b578-b8eeae89d4c9.jpg",
+      "bbox": [
+        2,
+        252,
+        1036,
+        348
+      ],
+      "annotation_source": "annotator",
+      "source_text": "Скільки відсотків від 1 ц становлять:",
+      "file": "images/p17.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/276f9e4a-cd02-5eac-b578-b8eeae89d4c9.jpg",
+      "sha256": "519ff157347d7c3fc50836da8330dfd39d5ac3380bd3aae4294ce8aa5dc97aa6"
+    },
+    {
+      "id": "p18",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/56af0fb1-f420-4bcf-8037-6ee7bb67ffbd.jpg",
+      "bbox": [
+        565,
+        1188,
+        2581,
+        1265
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "згідно з законом 30 Травня 1918 року, що і засвідчено його",
+      "file": "images/p18.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/56af0fb1-f420-4bcf-8037-6ee7bb67ffbd.jpg",
+      "sha256": "2b5d393ae69235c107e008953d3f3fcb3c512aedc785d7805ed5e3685d9c6ae9"
+    },
+    {
+      "id": "p19",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/b5facf5d-e529-4a30-b7e7-63f23ba8c52f.jpg",
+      "bbox": [
+        861,
+        886,
+        1458,
+        936
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "ЛІКВІДАЦІЙНО-РАХУНКОВИЙ",
+      "file": "images/p19.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/b5facf5d-e529-4a30-b7e7-63f23ba8c52f.jpg",
+      "sha256": "192ec1169e86361b053f555e91d8b11e7a13f5fcc95df74ade1302624af554be"
+    },
+    {
+      "id": "p20",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/cc4fd05c-8a35-5df7-9b91-45880b4ef51f.jpg",
+      "bbox": [
+        432,
+        3467,
+        2711,
+        3633
+      ],
+      "annotation_source": "annotator",
+      "source_text": "4 Виберіть із наведених ланцюжків причинно-наслідкових зв'язків правильний. Позначте його знаком",
+      "file": "images/p20.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/cc4fd05c-8a35-5df7-9b91-45880b4ef51f.jpg",
+      "sha256": "a30c03f09e7589ccc26bc6961a294c418d697432efc0b33a3dd8e9ce45294c4e"
+    },
+    {
+      "id": "p21",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/bb482c65-3c36-4700-a983-8dd28d052774.jpg",
+      "bbox": [
+        410,
+        1514,
+        2339,
+        1594
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "партаменту Міністерства Юстіції БУКОВСЬКИЙ - Віце-Ді-",
+      "file": "images/p21.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/bb482c65-3c36-4700-a983-8dd28d052774.jpg",
+      "sha256": "8f52583b8e89edb513a13a3b55a370f4d84a85bc186a1f9a41176ae5f357d76e"
+    },
+    {
+      "id": "p22",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/77735e58-463f-4283-ba61-21dd3177d187.jpg",
+      "bbox": [
+        624,
+        489,
+        2161,
+        555
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "Земств, зробити належні заходи, по змозі навіть",
+      "file": "images/p22.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/77735e58-463f-4283-ba61-21dd3177d187.jpg",
+      "sha256": "7ad02771a21f7bde18b5756784ba4da2cb46e3e62e83eebfd7cd48a40434839e"
+    },
+    {
+      "id": "p23",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/b98ac36b-2e35-5fd2-82b8-233f6e4686a1.jpg",
+      "bbox": [
+        0,
+        2867,
+        2461,
+        3026
+      ],
+      "annotation_source": "annotator",
+      "source_text": "бів, на яких виник Стародавній Рим. На Капі-",
+      "file": "images/p23.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/b98ac36b-2e35-5fd2-82b8-233f6e4686a1.jpg",
+      "sha256": "f95d6b63b8393221931c4de6f466a46b38fd308e95aa3f51c3ed800fa68105da"
+    },
+    {
+      "id": "p24",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/5f8066bf-eaa0-5e64-b82b-5c577c252b80.jpg",
+      "bbox": [
+        270,
+        3024,
+        776,
+        3096
+      ],
+      "annotation_source": "annotator",
+      "source_text": "SHOT ON REDMI 9",
+      "file": "images/p24.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/5f8066bf-eaa0-5e64-b82b-5c577c252b80.jpg",
+      "sha256": "6adc21841778a1777c5048da3e82289e37a5184921901a355ba3ef2cd7931678"
+    },
+    {
+      "id": "p25",
+      "label": "printed",
+      "split": "test",
+      "source_file": "images/9cbd5bf3-8ea0-55f8-a607-b5560a26171c.jpg",
+      "bbox": [
+        1600,
+        0,
+        3085,
+        42
+      ],
+      "annotation_source": "annotator",
+      "source_text": "112 113 114 115 116 117 118 119 210",
+      "file": "images/p25.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/9cbd5bf3-8ea0-55f8-a607-b5560a26171c.jpg",
+      "sha256": "0bfdbfee542188163a6f164fe1ce44c763f9f54a571ad78632475371e63c7f14"
+    },
+    {
+      "id": "h01",
+      "label": "handwritten",
+      "split": "dev",
+      "source_file": "images/73d55b04-9c64-5dc6-a85d-a1ae3fa33b60.jpg",
+      "bbox": [
+        369,
+        3363,
+        2954,
+        3589
+      ],
+      "annotation_source": "annotator",
+      "source_text": "Нею - займенник, н. ф - вона, особовий, одн.,",
+      "file": "images/h01.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/73d55b04-9c64-5dc6-a85d-a1ae3fa33b60.jpg",
+      "sha256": "e04f16aa60fd4a3c60bd7826fbd46f2a1aaf2e04b8476acd4ab565833d12d8bc"
+    },
+    {
+      "id": "h02",
+      "label": "handwritten",
+      "split": "dev",
+      "source_file": "images/08679747-82e9-4168-b565-3db0a1aed887.jpg",
+      "bbox": [
+        180,
+        539,
+        2231,
+        737
+      ],
+      "annotation_source": "annotator",
+      "source_text": "давали знак, що з під теплої ковдри, хоч  не хо-",
+      "file": "images/h02.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/08679747-82e9-4168-b565-3db0a1aed887.jpg",
+      "sha256": "3c0223e88f43150bab0e20470d82344e4ea5e6b350b555f072224928ef5cd1c5"
+    },
+    {
+      "id": "h03",
+      "label": "handwritten",
+      "split": "dev",
+      "source_file": "images/8da5e5ff-b066-5f1f-af37-108e21e6d6b0.jpg",
+      "bbox": [
+        156,
+        504,
+        918,
+        591
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "лугів, утворюючи нову сіль і основу.",
+      "file": "images/h03.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/8da5e5ff-b066-5f1f-af37-108e21e6d6b0.jpg",
+      "sha256": "236d0709e0240daa04a69a2a2dab2a89a3756466edb2a93eac0649f17adfcbe8"
+    },
+    {
+      "id": "h04",
+      "label": "handwritten",
+      "split": "dev",
+      "source_file": "images/209bf0f1-3f9f-4975-9743-6fe12ad01782.jpg",
+      "bbox": [
+        359,
+        3105,
+        2844,
+        3292
+      ],
+      "annotation_source": "annotator",
+      "source_text": "А в ~~1960-ті - 1980~~ 1960-1980, коли єдиною дозволеною",
+      "file": "images/h04.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/209bf0f1-3f9f-4975-9743-6fe12ad01782.jpg",
+      "sha256": "6c88e6a4b114aea11852d72b6360b59997a57a92b08917286d383302ef015631"
+    },
+    {
+      "id": "h05",
+      "label": "handwritten",
+      "split": "dev",
+      "source_file": "images/652b15ed-46bd-4b0e-bf2e-39b072197564.jpg",
+      "bbox": [
+        251,
+        964,
+        1559,
+        1038
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "Людський голос - то, взагалі, матерія магічна, в нього",
+      "file": "images/h05.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/652b15ed-46bd-4b0e-bf2e-39b072197564.jpg",
+      "sha256": "520b562913a6226cc0e4656fd2b31f744d6b00f58f7347d57d117545866db030"
+    },
+    {
+      "id": "h06",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/27b1d939-a043-40b7-b1ab-986df815bb2b.jpg",
+      "bbox": [
+        94,
+        1794,
+        1654,
+        1904
+      ],
+      "annotation_source": "annotator",
+      "source_text": "52,8 осіб/год. Поточне навантаження (39 осіб/год)",
+      "file": "images/h06.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/27b1d939-a043-40b7-b1ab-986df815bb2b.jpg",
+      "sha256": "faaeed819b9112bc7eec41f14a4331d7fab6fdf2f4ce8b7d6a37d2ec38a09a84"
+    },
+    {
+      "id": "h07",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/2fc24534-ee9b-4612-b743-34767c8c6d86.jpg",
+      "bbox": [
+        7,
+        701,
+        1559,
+        783
+      ],
+      "annotation_source": "annotator",
+      "source_text": "запобігає хаосу в правозастосуванні, висока роль",
+      "file": "images/h07.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/2fc24534-ee9b-4612-b743-34767c8c6d86.jpg",
+      "sha256": "e0799f20bde7f07dee98def9499b982aca9de857a9f10da7b90e102d141120ad"
+    },
+    {
+      "id": "h08",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/1b3ac9b6-2f8b-4dac-be8f-49a9eb7cad4a.jpg",
+      "bbox": [
+        163,
+        3259,
+        2844,
+        3485
+      ],
+      "annotation_source": "annotator",
+      "source_text": "своїми і обурення привілеями москвичів,",
+      "file": "images/h08.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/1b3ac9b6-2f8b-4dac-be8f-49a9eb7cad4a.jpg",
+      "sha256": "17e0f6229f8058796af1b0d90b9433d7cbb1249e57c2723940263786029c2415"
+    },
+    {
+      "id": "h09",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/347d94f6-3a45-4cfc-98b3-3b8f15abfa01.jpg",
+      "bbox": [
+        49,
+        1602,
+        1612,
+        1702
+      ],
+      "annotation_source": "annotator",
+      "source_text": "зиції~~,~~. З~~з~~а цієї ціни ринок перебуває в стані рівноваги - відс~~д~~{у}тність надлишку",
+      "file": "images/h09.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/347d94f6-3a45-4cfc-98b3-3b8f15abfa01.jpg",
+      "sha256": "b49af7f068d6577beff81bc6acf1b62344182adfcc4312796b957343d36f8989"
+    },
+    {
+      "id": "h10",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/cbcb26a5-2ca2-594a-b7be-e211e0f92483.jpg",
+      "bbox": [
+        0,
+        1248,
+        2602,
+        1630
+      ],
+      "annotation_source": "annotator",
+      "source_text": "П - площа територій.",
+      "file": "images/h10.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/cbcb26a5-2ca2-594a-b7be-e211e0f92483.jpg",
+      "sha256": "6b189d1c13783b11f5216d89e08df390cd6efef277a40ecc490323ee44c2eb38"
+    },
+    {
+      "id": "h11",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/2eb35f5a-9cf9-438e-8b1e-6fd25ea68e82.jpg",
+      "bbox": [
+        314,
+        304,
+        2736,
+        529
+      ],
+      "annotation_source": "annotator",
+      "source_text": "\"Оксано, Оксано, я чую твій голос, то",
+      "file": "images/h11.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/2eb35f5a-9cf9-438e-8b1e-6fd25ea68e82.jpg",
+      "sha256": "7199d6a592c108410a8287a42cc11d8664543af1d66443d728c47712560ae570"
+    },
+    {
+      "id": "h12",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/10b425f1-f542-4c62-9c00-e7df45a2e68e.jpg",
+      "bbox": [
+        22,
+        0,
+        1365,
+        66
+      ],
+      "annotation_source": "annotator",
+      "source_text": "5. Які ~~фції-є~~ відношення є ф-ціями, які є відображеннями на множині",
+      "file": "images/h12.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/10b425f1-f542-4c62-9c00-e7df45a2e68e.jpg",
+      "sha256": "1db9b1909a290b1e46b3a43762ccc983c80cd5b7fa216b8cc26fa83d8aabe03a"
+    },
+    {
+      "id": "h13",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/364d64be-cbb8-5dd8-be9b-cb77a403c458.jpg",
+      "bbox": [
+        1533,
+        1140,
+        2280,
+        1338
+      ],
+      "annotation_source": "annotator",
+      "source_text": "Домашня робота",
+      "file": "images/h13.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/364d64be-cbb8-5dd8-be9b-cb77a403c458.jpg",
+      "sha256": "41d27825ba42ef0bc36d80ba414102e5cba6208e0d258db7952bef3c34034e15"
+    },
+    {
+      "id": "h14",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/9b89273c-90bb-42bd-b76e-e1136bc267a6.jpg",
+      "bbox": [
+        436,
+        2537,
+        2863,
+        2722
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "солідарність зі своїми і обурення при-",
+      "file": "images/h14.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/9b89273c-90bb-42bd-b76e-e1136bc267a6.jpg",
+      "sha256": "ae7914b3fd3157ad0faa747eb49327d6b4131388de4c014e3d1e8d96aa895319"
+    },
+    {
+      "id": "h15",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/31ce13e9-b202-47ab-b0ff-3a7188feb50b.jpg",
+      "bbox": [
+        94,
+        285,
+        1489,
+        347
+      ],
+      "annotation_source": "annotator",
+      "source_text": "свіжого повітря, солідарність зі своїми",
+      "file": "images/h15.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/31ce13e9-b202-47ab-b0ff-3a7188feb50b.jpg",
+      "sha256": "761c4e7be2c31e015598b1c72e48481ea75d788c2cbb3bb83f2850a880d783fe"
+    },
+    {
+      "id": "h16",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/67b40451-83f9-5253-b3fb-7342bc820d32.jpg",
+      "bbox": [
+        85,
+        1942,
+        3897,
+        2177
+      ],
+      "annotation_source": "annotator",
+      "source_text": "на живі організми - освітленість, температу",
+      "file": "images/h16.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/67b40451-83f9-5253-b3fb-7342bc820d32.jpg",
+      "sha256": "e2e612ddf331aee271b1e27e743bcf644864fc10b86788150d8a23d7b16a22ba"
+    },
+    {
+      "id": "h17",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/03071698-dea7-41c8-ba8d-ecaff057410c.jpg",
+      "bbox": [
+        112,
+        87,
+        1445,
+        187
+      ],
+      "annotation_source": "annotator",
+      "source_text": "Спочатку був брехунець. З нього починався",
+      "file": "images/h17.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/03071698-dea7-41c8-ba8d-ecaff057410c.jpg",
+      "sha256": "cb2b81819fb34118c542ddc602e2dc5772082f5f8b3e88711aa47114514d2307"
+    },
+    {
+      "id": "h18",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/b1b5ae7f-4971-4b0c-bb29-da14a3e59c9f.jpg",
+      "bbox": [
+        334,
+        1099,
+        1653,
+        1243
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "буде виконувати обов'язки секретаря",
+      "file": "images/h18.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/b1b5ae7f-4971-4b0c-bb29-da14a3e59c9f.jpg",
+      "sha256": "633ba645a61934768e39d19597e659bdbbe004ee670f97ea7e3ba0fa15fdd8cf"
+    },
+    {
+      "id": "h19",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/15727415-95de-48bc-a9ce-7a7aa00b6ad1.jpg",
+      "bbox": [
+        351,
+        667,
+        2591,
+        959
+      ],
+      "annotation_source": "annotator",
+      "source_text": "голоси футбольних коментаторів. Їх упізнава-",
+      "file": "images/h19.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/15727415-95de-48bc-a9ce-7a7aa00b6ad1.jpg",
+      "sha256": "73886f7538908abe7401c171d574771e380df14965a62540c3270291157776a0"
+    },
+    {
+      "id": "h20",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/d8c9ec79-20d4-5b11-b6f6-d0543639ec88.jpg",
+      "bbox": [
+        1055,
+        2041,
+        1731,
+        2238
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "III - рівень",
+      "file": "images/h20.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/d8c9ec79-20d4-5b11-b6f6-d0543639ec88.jpg",
+      "sha256": "2f46d90860d79cc68c4f08516356706de884184b2df71584990ed09168598db9"
+    },
+    {
+      "id": "h21",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/35fd36d5-b0a5-41a3-a311-e439d73f451b.jpg",
+      "bbox": [
+        143,
+        2258,
+        1656,
+        2339
+      ],
+      "annotation_source": "annotator",
+      "source_text": "ться у центральному офісі, що забезпечує єдність політи-",
+      "file": "images/h21.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/35fd36d5-b0a5-41a3-a311-e439d73f451b.jpg",
+      "sha256": "969719167c6000ef84864bd34bef2d5a389fa340791b824a1fe86db0cb9568ed"
+    },
+    {
+      "id": "h22",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/3490239b-c077-4cc7-903d-931e215679d7.jpg",
+      "bbox": [
+        68,
+        183,
+        1479,
+        296
+      ],
+      "annotation_source": "annotator",
+      "source_text": "формаці, коли це явиться",
+      "file": "images/h22.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/3490239b-c077-4cc7-903d-931e215679d7.jpg",
+      "sha256": "43782dc28427d1a2c9da8b953b7bff4fbe8adb54f6775cbe5193295275d8c7d5"
+    },
+    {
+      "id": "h23",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/c6887a79-d65d-5afc-8a93-006a579fc797.jpg",
+      "bbox": [
+        154,
+        232,
+        1621,
+        338
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "сили тиску, прикладеної до даної поверхні, до",
+      "file": "images/h23.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/c6887a79-d65d-5afc-8a93-006a579fc797.jpg",
+      "sha256": "d96f8dc736b333d6a6e4805f67d48e619423746ecdcda197559407108f33f350"
+    },
+    {
+      "id": "h24",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/2a305a1e-e523-4528-8e29-e03d4759d7db.jpg",
+      "bbox": [
+        51,
+        424,
+        979,
+        497
+      ],
+      "annotation_source": "annotator",
+      "source_text": "Україна звучить в ефірі пла-",
+      "file": "images/h24.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/2a305a1e-e523-4528-8e29-e03d4759d7db.jpg",
+      "sha256": "938ef431f006b809fc41c55b32831692d71610a6712ef7323fc843e2716ff0f6"
+    },
+    {
+      "id": "h25",
+      "label": "handwritten",
+      "split": "test",
+      "source_file": "images/9a1c4ace-a522-52c7-9600-6bc20cfeddd7.jpg",
+      "bbox": [
+        177,
+        2252,
+        2892,
+        2423
+      ],
+      "annotation_source": "volunteer",
+      "source_text": "місяця (солярні, лунарні, австральні)",
+      "file": "images/h25.jpg",
+      "source_url": "https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys/resolve/aaebe5290a3ae7ea8a2fa77cf31bb872761c7310/train/images/9a1c4ace-a522-52c7-9600-6bc20cfeddd7.jpg",
+      "sha256": "ca47e54af04eef68b81f04c9b95aafe431aae6260658eef260edc4c0b8e89d72"
+    }
+  ],
+  "excluded_after_visual_review": [
+    {
+      "source_file": "images/7886ba12-2bb5-4cdb-b109-dffb18afc519.jpg",
+      "reason": "Partial scanner watermark; retain only one full watermark example"
+    },
+    {
+      "source_file": "images/3e7b4eb1-92e3-41d4-928d-b23d112558d2.jpg",
+      "reason": "Repeated scanner watermark"
+    },
+    {
+      "source_file": "images/d0273ef9-34ef-502b-b2b8-4dcc9992ca5e.jpg",
+      "reason": "Near duplicate of the sticker visible in another document"
+    },
+    {
+      "source_file": "images/d2df1b5e-ca2f-47a2-90cb-3d93a05b6efd.jpg",
+      "reason": "Visually ambiguous cursive header with handwritten date; excluded before any model evaluation"
+    }
+  ],
+  "limitations": "Small convenience sample; source handwriting writers are not identified; different documents can belong to one writer. Annotation may contain mistakes."
+}

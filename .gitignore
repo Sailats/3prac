@@ -1,0 +1,13 @@
+.runtime/
+.venv/
+.local-python.txt
+.local-models.txt
+__pycache__/
+*.pyc
+*.part
+*.parts/
+/models/
+*.zip
+docs/superpowers/
+docs/progress.md
+docs/interface-initial.png

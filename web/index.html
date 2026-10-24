@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Рукописный или печатный — лаборатория текста</title>
+  <link rel="stylesheet" href="/web/style.css">
+  <script defer src="/web/app.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/">Лаборатория текста<span>Практическая работа по интеллектуальным системам</span></a><a href="/web/guide.html">Как устроен проект</a></header>
+<main>
+  <div class="intro"><div><h1>Рукописный<br>или печатный?</h1><p>Одна фотография, две нейросети. Сравните, как они определяют тип текста.</p></div><div class="local-note"><span class="dot"></span>Обработка на вашем компьютере<small>Без подписки и ключа. После установки работает без интернета.</small></div></div>
+  <div class="workspace">
+    <section class="input-panel" aria-labelledby="input-title">
+      <h2 id="input-title">Изображение</h2>
+      <label class="dropzone" id="dropzone" for="file"><input id="file" type="file" accept="image/jpeg,image/png,image/webp,image/bmp"><div id="upload-prompt"><span class="upload-symbol" aria-hidden="true">＋</span><strong>Выберите фотографию</strong><span>или перетащите её сюда</span><small>JPG, PNG, WebP, BMP · до 15 МБ</small></div><img id="preview" alt="Выбранное изображение с текстом" hidden></label>
+      <div class="fileline"><span id="filename">Фотография ещё не выбрана</span><button type="button" class="text-button" id="clear" hidden>Убрать</button></div>
+      <button class="primary" id="recognize" disabled>Сравнить две модели</button>
+      <p class="hint">На фото должен быть один тип текста. Смешанный текст, сильное размытие и пустой кадр могут дать ошибку.</p>
+      <div class="examples-head"><h3>Попробуйте готовые примеры</h3><span>Из набора для разработки</span></div>
+      <div class="examples" id="examples"></div>
+    </section>
+    <section class="answers-panel" aria-labelledby="answers-title">
+      <div class="section-title"><h2 id="answers-title">Ответы моделей</h2><span id="agreement" class="badge">Ожидают фотографию</span></div>
+      <article class="answer"><div class="model-heading"><h3>Qwen2-VL <b>2B</b></h3><span>Модель 1</span></div><div class="answer-value" id="value-2B">—</div><p id="detail-2B">Мультимодальная модель Qwen</p><details id="raw-box-2B" hidden><summary>Ответ нейросети</summary><pre id="raw-2B"></pre></details></article>
+      <article class="answer"><div class="model-heading"><h3>Qwen3-VL <b>2B</b></h3><span>Модель 2</span></div><div class="answer-value" id="value-Q3">—</div><p id="detail-Q3">Новое поколение мультимодальной модели Qwen</p><details id="raw-box-Q3" hidden><summary>Ответ нейросети</summary><pre id="raw-Q3"></pre></details></article>
+      <div class="progress-panel" id="progress-panel" hidden><div class="status-line"><span class="spinner" aria-hidden="true"></span><strong id="progress-message">Подготовка…</strong></div><progress id="progress" max="2" value="0"></progress><small>При первом обращении модель загружается в память. Дождитесь ответа.</small></div>
+      <p class="error" id="error" role="alert" hidden></p>
+      <div class="method-note"><h3>Что получает нейросеть</h3><p>Изображение и инструкцию для выбранной модели. Правильный ответ и имя файла ей не передаются. Число «уверенности» не придумывается.</p></div>
+    </section>
+  </div>
+  <section class="experiment" aria-labelledby="experiment-title"><div class="experiment-heading"><div><h2 id="experiment-title">Проверка на 40 изображениях</h2><p>20 рукописных и 20 печатных фрагментов. Инструкции подобраны для каждой модели на dev.</p></div><button id="evaluate" class="secondary">Запустить эксперимент</button></div><p class="report-caption" id="report-caption">Сохранённый протокол загружается…</p><div id="metrics"></div><div id="matrix"></div><div class="report-links" id="report-links"></div><details class="all-predictions" id="prediction-details" hidden><summary>Посмотреть ответы на каждом изображении</summary><div class="table-scroll"><table><thead><tr><th>Пример</th><th>Правильный класс</th><th>Модель</th><th>Ответ</th><th>Время</th></tr></thead><tbody id="prediction-rows"></tbody></table></div></details><p class="footnote">Accuracy учитывает все 40 изображений, включая отказы и ошибки. Одна ошибка меняет результат на 2,5 процентного пункта. Небольшая выборка не показывает качество на любых фотографиях.</p></section>
+  <footer>Две предобученные VLM с Hugging Face, запущенные локально. <a href="/web/guide.html">Описание метода и материалы для защиты</a></footer>
+</main>
+</body></html>

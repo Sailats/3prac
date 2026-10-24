@@ -1,0 +1,107 @@
+[
+  {
+    "prompt_name": "describe",
+    "prompt": "Describe the appearance of the text in this image. Is it handwriting or print?",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "The text in the image is print. It is written in a blue, cursive-style font and is set against a yellow and white patterned background."
+  },
+  {
+    "prompt_name": "describe",
+    "prompt": "Describe the appearance of the text in this image. Is it handwriting or print?",
+    "id": "p03",
+    "truth": "printed",
+    "raw": "The text in the image is print. It is written in a black, cursive-style font on a white background. The text is in Cyrillic script and reads \"Всеукраїнський радіодиктант\"."
+  },
+  {
+    "prompt_name": "describe",
+    "prompt": "Describe the appearance of the text in this image. Is it handwriting or print?",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "The text in the image is handwritten. It appears to be written in cursive script on a lined surface, possibly a piece of paper or a notebook. The handwriting is in a mix of uppercase and lowercase letters, with some letters being slightly slanted or stylized. The text is in a cursive script, with"
+  },
+  {
+    "prompt_name": "describe",
+    "prompt": "Describe the appearance of the text in this image. Is it handwriting or print?",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "The text in the image is handwritten in blue ink on a grid-lined paper. The handwriting is cursive and somewhat uneven, with some letters appearing slightly slanted or distorted. The text is written in a flowing script, and the letters are not perfectly clear due to the handwriting style and the image quality."
+  },
+  {
+    "prompt_name": "describe",
+    "prompt": "Describe the appearance of the text in this image. Is it handwriting or print?",
+    "id": "h05",
+    "truth": "handwritten",
+    "raw": "The text in the image is handwritten in a cursive script. It appears to be a mix of lowercase and uppercase letters, with a flowing, somewhat uneven style. The handwriting is in a dark, possibly black or dark gray ink, and the letters are not perfectly uniform in size or spacing. The text is written in"
+  },
+  {
+    "prompt_name": "short",
+    "prompt": "Is this text handwritten or printed? Answer with only handwritten or printed.",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "printed"
+  },
+  {
+    "prompt_name": "short",
+    "prompt": "Is this text handwritten or printed? Answer with only handwritten or printed.",
+    "id": "p03",
+    "truth": "printed",
+    "raw": "printed"
+  },
+  {
+    "prompt_name": "short",
+    "prompt": "Is this text handwritten or printed? Answer with only handwritten or printed.",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "handwritten"
+  },
+  {
+    "prompt_name": "short",
+    "prompt": "Is this text handwritten or printed? Answer with only handwritten or printed.",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "handwritten"
+  },
+  {
+    "prompt_name": "short",
+    "prompt": "Is this text handwritten or printed? Answer with only handwritten or printed.",
+    "id": "h05",
+    "truth": "handwritten",
+    "raw": "handwritten"
+  },
+  {
+    "prompt_name": "neutral",
+    "prompt": "Examine the strokes of the letters. Decide whether they were written by hand or produced by a printer. Return one word: handwritten or printed.",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "printed"
+  },
+  {
+    "prompt_name": "neutral",
+    "prompt": "Examine the strokes of the letters. Decide whether they were written by hand or produced by a printer. Return one word: handwritten or printed.",
+    "id": "p03",
+    "truth": "printed",
+    "raw": "printed"
+  },
+  {
+    "prompt_name": "neutral",
+    "prompt": "Examine the strokes of the letters. Decide whether they were written by hand or produced by a printer. Return one word: handwritten or printed.",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "handwritten"
+  },
+  {
+    "prompt_name": "neutral",
+    "prompt": "Examine the strokes of the letters. Decide whether they were written by hand or produced by a printer. Return one word: handwritten or printed.",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "handwritten"
+  },
+  {
+    "prompt_name": "neutral",
+    "prompt": "Examine the strokes of the letters. Decide whether they were written by hand or produced by a printer. Return one word: handwritten or printed.",
+    "id": "h05",
+    "truth": "handwritten",
+    "raw": "handwritten"
+  }
+]

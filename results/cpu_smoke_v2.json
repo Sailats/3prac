@@ -1,0 +1,46 @@
+[
+  {
+    "sample": "p01",
+    "model": "Q3",
+    "label": "printed",
+    "raw": "printed",
+    "seconds": 36.0966,
+    "generation_seconds": 26.4329,
+    "load_seconds": 3.8079,
+    "device": "cpu",
+    "error": null
+  },
+  {
+    "sample": "h01",
+    "model": "Q3",
+    "label": "handwritten",
+    "raw": "handwritten",
+    "seconds": 26.4852,
+    "generation_seconds": 26.4701,
+    "load_seconds": 0.0,
+    "device": "cpu",
+    "error": null
+  },
+  {
+    "sample": "p01",
+    "model": "2B",
+    "label": "printed",
+    "raw": "Printed",
+    "seconds": 62.565,
+    "generation_seconds": 46.9877,
+    "load_seconds": 15.5496,
+    "device": "cpu",
+    "error": null
+  },
+  {
+    "sample": "h01",
+    "model": "2B",
+    "label": "handwritten",
+    "raw": "handwritten",
+    "seconds": 33.4267,
+    "generation_seconds": 33.4138,
+    "load_seconds": 0.0,
+    "device": "cpu",
+    "error": null
+  }
+]

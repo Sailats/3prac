@@ -1,0 +1,408 @@
+{
+  "created_utc": "2026-10-24T10:56:05.952126+00:00",
+  "split": "dev",
+  "prompts": {
+    "2B": "Look at the letter shapes, not the meaning or language. Printed text has regular, repeated letter shapes and consistent spacing, including printed italic fonts and digital timestamps. Handwritten text has irregular strokes made by a pen or pencil. Which type is in the image? Reply with exactly printed or handwritten. If the image has no text, is unreadable, or has both types, reply unknown.",
+    "Q3": "Is this text handwritten or printed? Answer with only handwritten or printed. If there is no text or both types are present, answer unknown."
+  },
+  "prompts_sha256": "7d62fa1c5a0b49ebaebfa3625298e1aa7185a03ee7410fb2ddd5b6be64e1da4f",
+  "manifest_sha256": "3fd5474f86c7927582ed736c81575b16541edeff013b7233ad6b01eb23f198e0",
+  "settings": {
+    "max_side": 1024,
+    "max_new_tokens": 12,
+    "do_sample": false,
+    "warmup": "one dev image per model",
+    "order": "alternating",
+    "quantization": "decoder NF4 double; vision FP16; compute FP16 on CUDA",
+    "visual_token_limit": 512,
+    "evaluation_note": "Repeat comparison on the existing 40 images after replacing SmolVLM; the test set has been used before. Per-model prompts were selected on dev; labels and images unchanged. This compares configured pipelines, not models with identical prompt wording."
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.7.1+cu118",
+    "transformers": "4.57.1",
+    "platform": "Windows-11-10.0.28000-SP0",
+    "gpu": "NVIDIA GeForce RTX 2060 SUPER"
+  },
+  "models": {
+    "2B": {
+      "name": "Qwen2-VL 2B",
+      "repo": "Qwen/Qwen2-VL-2B-Instruct",
+      "revision": "895c3a49bc3fa70a340399125c650a463535e71c"
+    },
+    "Q3": {
+      "name": "Qwen3-VL 2B",
+      "repo": "Qwen/Qwen3-VL-2B-Instruct",
+      "revision": "89644892e4d85e24eaac8bacfd4f463576704203"
+    }
+  },
+  "warmup": {
+    "2B": {
+      "model": "2B",
+      "label": "printed",
+      "raw": "Printed",
+      "seconds": 11.9499,
+      "generation_seconds": 0.8733,
+      "load_seconds": 5.0729,
+      "device": "cuda",
+      "error": null
+    },
+    "Q3": {
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 3.9048,
+      "generation_seconds": 0.4183,
+      "load_seconds": 3.4514,
+      "device": "cuda",
+      "error": null
+    }
+  },
+  "metrics": {
+    "2B": {
+      "n": 10,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "macro_f1": 1.0,
+      "classes": {
+        "handwritten": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        },
+        "printed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        }
+      },
+      "confusion": {
+        "handwritten": {
+          "handwritten": 5,
+          "printed": 0,
+          "unknown": 0,
+          "invalid": 0,
+          "error": 0
+        },
+        "printed": {
+          "handwritten": 0,
+          "printed": 5,
+          "unknown": 0,
+          "invalid": 0,
+          "error": 0
+        }
+      },
+      "unknown": 0,
+      "invalid": 0,
+      "errors": 0,
+      "mean_seconds": 0.37299,
+      "median_seconds": 0.37055000000000005
+    },
+    "Q3": {
+      "n": 10,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "macro_f1": 1.0,
+      "classes": {
+        "handwritten": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        },
+        "printed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        }
+      },
+      "confusion": {
+        "handwritten": {
+          "handwritten": 5,
+          "printed": 0,
+          "unknown": 0,
+          "invalid": 0,
+          "error": 0
+        },
+        "printed": {
+          "handwritten": 0,
+          "printed": 5,
+          "unknown": 0,
+          "invalid": 0,
+          "error": 0
+        }
+      },
+      "unknown": 0,
+      "invalid": 0,
+      "errors": 0,
+      "mean_seconds": 0.33233999999999997,
+      "median_seconds": 0.32915
+    }
+  },
+  "predictions": [
+    {
+      "id": "p01",
+      "file": "images/p01.jpg",
+      "truth": "printed",
+      "model": "2B",
+      "label": "printed",
+      "raw": "Printed",
+      "seconds": 0.4004,
+      "generation_seconds": 0.3827,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p01",
+      "file": "images/p01.jpg",
+      "truth": "printed",
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 0.2688,
+      "generation_seconds": 0.2518,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p02",
+      "file": "images/p02.jpg",
+      "truth": "printed",
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 0.2834,
+      "generation_seconds": 0.2761,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p02",
+      "file": "images/p02.jpg",
+      "truth": "printed",
+      "model": "2B",
+      "label": "printed",
+      "raw": "Printed",
+      "seconds": 0.36,
+      "generation_seconds": 0.3525,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p03",
+      "file": "images/p03.jpg",
+      "truth": "printed",
+      "model": "2B",
+      "label": "printed",
+      "raw": "Printed",
+      "seconds": 0.3896,
+      "generation_seconds": 0.3754,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p03",
+      "file": "images/p03.jpg",
+      "truth": "printed",
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 0.2687,
+      "generation_seconds": 0.2585,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p04",
+      "file": "images/p04.jpg",
+      "truth": "printed",
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 0.2804,
+      "generation_seconds": 0.2741,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p04",
+      "file": "images/p04.jpg",
+      "truth": "printed",
+      "model": "2B",
+      "label": "printed",
+      "raw": "Printed",
+      "seconds": 0.3427,
+      "generation_seconds": 0.3356,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p05",
+      "file": "images/p05.jpg",
+      "truth": "printed",
+      "model": "2B",
+      "label": "printed",
+      "raw": "Printed",
+      "seconds": 0.3574,
+      "generation_seconds": 0.3488,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "p05",
+      "file": "images/p05.jpg",
+      "truth": "printed",
+      "model": "Q3",
+      "label": "printed",
+      "raw": "printed",
+      "seconds": 0.2844,
+      "generation_seconds": 0.2737,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h01",
+      "file": "images/h01.jpg",
+      "truth": "handwritten",
+      "model": "Q3",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3758,
+      "generation_seconds": 0.3613,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h01",
+      "file": "images/h01.jpg",
+      "truth": "handwritten",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3904,
+      "generation_seconds": 0.3723,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h02",
+      "file": "images/h02.jpg",
+      "truth": "handwritten",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3853,
+      "generation_seconds": 0.3694,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h02",
+      "file": "images/h02.jpg",
+      "truth": "handwritten",
+      "model": "Q3",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.4069,
+      "generation_seconds": 0.3931,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h03",
+      "file": "images/h03.jpg",
+      "truth": "handwritten",
+      "model": "Q3",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3889,
+      "generation_seconds": 0.3803,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h03",
+      "file": "images/h03.jpg",
+      "truth": "handwritten",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "Handwritten",
+      "seconds": 0.363,
+      "generation_seconds": 0.3495,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h04",
+      "file": "images/h04.jpg",
+      "truth": "handwritten",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3769,
+      "generation_seconds": 0.3652,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h04",
+      "file": "images/h04.jpg",
+      "truth": "handwritten",
+      "model": "Q3",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3922,
+      "generation_seconds": 0.3771,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h05",
+      "file": "images/h05.jpg",
+      "truth": "handwritten",
+      "model": "Q3",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3739,
+      "generation_seconds": 0.3657,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    },
+    {
+      "id": "h05",
+      "file": "images/h05.jpg",
+      "truth": "handwritten",
+      "model": "2B",
+      "label": "handwritten",
+      "raw": "handwritten",
+      "seconds": 0.3642,
+      "generation_seconds": 0.3515,
+      "load_seconds": 0.0,
+      "device": "cuda",
+      "error": null
+    }
+  ],
+  "report_file": "dev_20261024_105605.json"
+}

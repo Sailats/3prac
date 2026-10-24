@@ -1,0 +1,482 @@
+[
+  {
+    "model": "256M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "Print"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "p02",
+    "truth": "printed",
+    "raw": "202/2/1"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "p03",
+    "truth": "printed",
+    "raw": "Beyçpıkçı"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "p04",
+    "truth": "printed",
+    "raw": "Printable"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "p05",
+    "truth": "printed",
+    "raw": "Printed."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "Dotted-line writing."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "h02",
+    "truth": "handwritten",
+    "raw": "Printed."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "Writing"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "h04",
+    "truth": "handwritten",
+    "raw": "Printed"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "h05",
+    "truth": "handwritten",
+    "raw": "Shogun's excuse - to begin"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "No."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "p02",
+    "truth": "printed",
+    "raw": "Yes."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "p03",
+    "truth": "printed",
+    "raw": "Beyçpıkçı"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "p04",
+    "truth": "printed",
+    "raw": "Yes."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "p05",
+    "truth": "printed",
+    "raw": "Yes."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "Yes."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "h02",
+    "truth": "handwritten",
+    "raw": "Yes."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "Yes."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "h04",
+    "truth": "handwritten",
+    "raw": "Yes."
+  },
+  {
+    "model": "256M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "h05",
+    "truth": "handwritten",
+    "raw": "Shogun's excuse - to begin"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "C"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "p02",
+    "truth": "printed",
+    "raw": "B"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "p03",
+    "truth": "printed",
+    "raw": "C"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "p04",
+    "truth": "printed",
+    "raw": "B"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "p05",
+    "truth": "printed",
+    "raw": "C"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "B"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "h02",
+    "truth": "handwritten",
+    "raw": "C"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "B"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "h04",
+    "truth": "handwritten",
+    "raw": "C"
+  },
+  {
+    "model": "256M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "h05",
+    "truth": "handwritten",
+    "raw": "A"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "Handwritten."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "p02",
+    "truth": "printed",
+    "raw": "Handwritten."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "p03",
+    "truth": "printed",
+    "raw": "Beyynkipahçı"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "p04",
+    "truth": "printed",
+    "raw": "Handwritten."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "p05",
+    "truth": "printed",
+    "raw": "Handwritten."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "Handwritten."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "h02",
+    "truth": "handwritten",
+    "raw": "Handwritten."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "Handwritten."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "h04",
+    "truth": "handwritten",
+    "raw": "Handwritten."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "short",
+    "prompt": "Is the text handwritten or printed? Answer with one word.",
+    "id": "h05",
+    "truth": "handwritten",
+    "raw": "Shogun once-again - to"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "Yes."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "p02",
+    "truth": "printed",
+    "raw": "No."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "p03",
+    "truth": "printed",
+    "raw": "Beyynkipahcik"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "p04",
+    "truth": "printed",
+    "raw": "Yes."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "p05",
+    "truth": "printed",
+    "raw": "Yes."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "Yes."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "h02",
+    "truth": "handwritten",
+    "raw": "Yes."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "Yes."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "h04",
+    "truth": "handwritten",
+    "raw": "Yes."
+  },
+  {
+    "model": "500M",
+    "prompt_name": "yesno",
+    "prompt": "Is the text handwritten? Answer yes or no.",
+    "id": "h05",
+    "truth": "handwritten",
+    "raw": "Shogun once-again - to"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "p01",
+    "truth": "printed",
+    "raw": "A"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "p02",
+    "truth": "printed",
+    "raw": "C"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "p03",
+    "truth": "printed",
+    "raw": "B"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "p04",
+    "truth": "printed",
+    "raw": "A"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "p05",
+    "truth": "printed",
+    "raw": "A"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "h01",
+    "truth": "handwritten",
+    "raw": "A"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "h02",
+    "truth": "handwritten",
+    "raw": "A"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "h03",
+    "truth": "handwritten",
+    "raw": "C"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "h04",
+    "truth": "handwritten",
+    "raw": "A"
+  },
+  {
+    "model": "500M",
+    "prompt_name": "choice",
+    "prompt": "How was the text in this image created?\nA: Handwritten by a person using a pen or pencil.\nB: Machine-printed or typeset.\nC: No text, unreadable text, or both types.\nAnswer with only A, B, or C.",
+    "id": "h05",
+    "truth": "handwritten",
+    "raw": "A"
+  }
+]
