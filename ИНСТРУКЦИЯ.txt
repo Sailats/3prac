@@ -1,7 +1,7 @@
 ﻿КАК ЗАПУСТИТЬ ПРАКТИЧЕСКУЮ РАБОТУ С GITHUB
 
 1. Скачайте TextType_Source.zip из релиза:
-   https://github.com/Sailats/3prac/releases/tag/v2.0.0
+   https://github.com/Sailats/3prac/releases/tag/v3.0.0
    Или откройте Code → Download ZIP на странице репозитория.
 
 2. Полностью распакуйте архив в отдельную папку.
@@ -46,3 +46,4 @@ Start_Windows.bat — установка через интернет для не
 В обсуждении задания указаны Hugging Face Inference Providers.
 Здесь две модели с Hugging Face запускаются локально бесплатно.
 Если преподаватель требует строго облачных провайдеров, обозначьте эту замену.
+ВЕРСИЯ 3: основной код — app.py, predict.py, evaluate.py. Установка вынесена в support/.

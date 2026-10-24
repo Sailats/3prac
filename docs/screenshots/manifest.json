@@ -1,0 +1,59 @@
+{
+  "application_version": "3.0-simple",
+  "viewport": [
+    1400,
+    1000
+  ],
+  "protocol": "test_20261024_160032.json",
+  "screenshots": [
+    {
+      "file": "01-form.png",
+      "caption": "Форма до обработки",
+      "sample": null,
+      "sha256": "2f4080489be04ca964a0f0fd3d5cdd223fd5dd97430a03f381cbdb23e4d33902",
+      "captured_utc": "2026-10-24T15:57:54.676462+00:00"
+    },
+    {
+      "file": "02-printed.png",
+      "caption": "Загруженный печатный JPG",
+      "sample": "p01",
+      "sha256": "1d53f921f49f448e74669dabe83d46dc407bfcbe6ffe126d3837dea270439152",
+      "captured_utc": "2026-10-24T15:59:58.281133+00:00"
+    },
+    {
+      "file": "03-handwritten.png",
+      "caption": "Готовый рукописный пример",
+      "sample": "h03",
+      "sha256": "9614a01fc53c7ac78d1e512730b1b5c116bb6a31bc6e40fc304d3b40cbcd3885",
+      "captured_utc": "2026-10-24T16:00:04.944900+00:00"
+    },
+    {
+      "file": "04-experiment-running.png",
+      "caption": "Настоящее выполнение эксперимента",
+      "sample": "test40",
+      "sha256": "6bb6d2a2066083d00e952613c75e3a4528120184093b5515b892aa7c077b9b49",
+      "captured_utc": "2026-10-24T16:00:15.084233+00:00"
+    },
+    {
+      "file": "05-metrics.png",
+      "caption": "Результаты нового прогона",
+      "sample": "test40",
+      "sha256": "ffe15a06a4b7c7ff7a1b651ff0d1a5f904dbe0cf27fac0239be44151d3a5f1ff",
+      "captured_utc": "2026-10-24T16:02:11.547417+00:00"
+    },
+    {
+      "file": "06-disagreement.png",
+      "caption": "Реальное расхождение: Qwen2 printed, Qwen3 handwritten",
+      "sample": "h12",
+      "sha256": "0229b0a54fc15dd0091d39b0bfb214edd8c61814dc5983e016739433ebb323ca",
+      "captured_utc": "2026-10-24T16:02:23.702242+00:00"
+    },
+    {
+      "file": "07-overview.png",
+      "caption": "Общий вид версии3 после восстановления из ошибки",
+      "sample": "h03",
+      "sha256": "f5d0db8e10859360e2c8ad4b3c76b46ab9c743bb6e61a1b19b7f35951c090bc1",
+      "captured_utc": "2026-10-24T16:12:16.535847+00:00"
+    }
+  ]
+}
