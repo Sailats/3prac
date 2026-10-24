@@ -6,7 +6,7 @@ import os
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 FILES = ('config.json', 'generation_config.json', 'preprocessor_config.json',
          'processor_config.json', 'tokenizer.json', 'tokenizer_config.json',
          'special_tokens_map.json', 'added_tokens.json', 'vocab.json', 'merges.txt',
@@ -145,7 +145,7 @@ def download_all():
             manifest['files'][name] = file_record(path)
         lock.write_text(json.dumps(manifest, indent=2), encoding='utf-8')
         print(f'{key}: source downloaded and hashed', flush=True)
-        from quantize_models import quantize_model
+        from support.quantize_models import quantize_model
         quantize_model(source, root / spec['folder'], spec)
 
 

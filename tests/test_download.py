@@ -5,7 +5,7 @@ import unittest
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
-from download_models import ensure_file
+from support.download_models import ensure_file
 
 
 class DownloadTests(unittest.TestCase):

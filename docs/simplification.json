@@ -1,0 +1,22 @@
+[
+  {
+    "file": "app.py",
+    "before_lines": 193,
+    "after_lines": 108
+  },
+  {
+    "file": "predict.py",
+    "before_lines": 137,
+    "after_lines": 137
+  },
+  {
+    "file": "evaluate.py",
+    "before_lines": 125,
+    "after_lines": 123
+  },
+  {
+    "file": "web/app.js",
+    "before_lines": 171,
+    "after_lines": 155
+  }
+]

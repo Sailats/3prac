@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from download_models import file_record, local_model_ready, models_directory
+from support.download_models import file_record, local_model_ready, models_directory
 
 
 class LocalModelTests(unittest.TestCase):

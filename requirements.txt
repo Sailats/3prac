@@ -7,3 +7,4 @@ numpy==2.2.6
 bitsandbytes==0.48.1
 accelerate==1.11.0
 # Torch устанавливается отдельно: CUDA 11.8 для NVIDIA либо CPU.
+Flask==3.1.3

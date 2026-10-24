@@ -2,7 +2,7 @@
 const $ = id => document.getElementById(id);
 const names = {handwritten:'Рукописный',printed:'Печатный',unknown:'Не удалось определить',invalid:'Неверный формат ответа',error:'Ошибка запуска'};
 const modelNames = {'2B':'Qwen2-VL 2B','Q3':'Qwen3-VL 2B'};
-let selected = null, busy = false, previewUrl = null, polling = false;
+let selected = null, busy = false, previewUrl = null;
 const pct = value => (value * 100).toLocaleString('ru-RU', {maximumFractionDigits:1}) + '%';
 const seconds = value => value.toLocaleString('ru-RU', {maximumFractionDigits:2}) + ' с';
 function error(message) { $('error').textContent = message; $('error').hidden = !message; }
@@ -59,40 +59,25 @@ async function api(path, body) {
   return data;
 }
 async function start(path, body) {
-  error(''); setBusy(true); $('progress').value = 0; $('progress-message').textContent = 'Подготовка…';
-  try { await api(path, body); poll(); }
-  catch (exc) { error(exc.message); setBusy(false); }
+  error(''); setBusy(true);
+  $('progress-message').textContent = path === '/api/evaluate' ? 'Проверяем 40 изображений…' : 'Модели обрабатывают изображение…';
+  try {
+    const result = await api(path, body);
+    if (result.kind === 'prediction') showAnswers(result.predictions);
+    if (result.kind === 'evaluation') showReport(result.report);
+  } catch (exc) { error(exc.message); }
+  finally { setBusy(false); }
 }
 $('recognize').addEventListener('click', async () => {
   if (!selected || busy) return;
   if (selected.sample_id) return start('/api/predict', {sample_id:selected.sample_id});
+  setBusy(true);
   const reader = new FileReader();
   reader.onload = () => start('/api/predict', {image:reader.result.split(',')[1]});
-  reader.onerror = () => error('Не удалось прочитать файл. Выберите его ещё раз.');
+  reader.onerror = () => { error('Не удалось прочитать файл. Выберите его ещё раз.'); setBusy(false); };
   reader.readAsDataURL(selected.file);
 });
 $('evaluate').addEventListener('click', () => start('/api/evaluate', {split:'test'}));
-async function poll() {
-  if (polling) return;
-  polling = true;
-  try {
-    while (true) {
-      const status = await api('/api/status');
-      $('progress-message').textContent = status.message;
-      $('progress').max = status.total || 2; $('progress').value = status.done;
-      if (status.status !== 'running') {
-        if (status.status === 'error') error(status.message);
-        if (status.status === 'done' && status.result) {
-          if (status.result.kind === 'prediction') showAnswers(status.result.predictions);
-          if (status.result.kind === 'evaluation') showReport(status.result.report);
-        }
-        setBusy(false); break;
-      }
-      setBusy(true); await new Promise(resolve => setTimeout(resolve, 900));
-    }
-  } catch (exc) { error('Соединение с программой потеряно. Проверьте, что окно запуска открыто.'); setBusy(false); }
-  finally { polling = false; }
-}
 function showAnswers(predictions) {
   for (const item of predictions) {
     $('value-'+item.model).textContent = names[item.label] || item.label;
@@ -165,7 +150,6 @@ async function initialize() {
       $('examples').append(button);
     }
     showReport(await api('/api/report'));
-    const status=await api('/api/status');if(status.status==='running'){setBusy(true);poll();}
   }catch(exc){error('Не удалось загрузить программу. Проверьте окно запуска и обновите страницу.');}
 }
 initialize();

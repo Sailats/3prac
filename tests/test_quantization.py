@@ -1,6 +1,6 @@
 import unittest
 
-from quantize_models import quantization_config
+from support.quantize_models import quantization_config
 
 
 class QuantizationTests(unittest.TestCase):

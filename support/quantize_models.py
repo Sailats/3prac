@@ -4,7 +4,7 @@ import gc
 import json
 from pathlib import Path
 
-from download_models import MODEL_SPECS, QUANTIZATION, file_record, models_directory
+from support.download_models import MODEL_SPECS, QUANTIZATION, file_record, models_directory
 
 
 def quantization_config():

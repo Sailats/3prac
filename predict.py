@@ -1,13 +1,12 @@
 """Подготовка изображения и вызов двух настоящих локальных VLM."""
 import io
 import os
-import re
 import time
 import warnings
 from pathlib import Path
 
 from PIL import Image, ImageOps, UnidentifiedImageError
-from download_models import MODEL_SPECS, models_directory
+from support.download_models import MODEL_SPECS, models_directory
 
 ROOT = Path(__file__).resolve().parent
 MODEL_KEYS = ('2B', 'Q3')
@@ -100,6 +99,7 @@ class ModelRunner:
         return self.loaded[key], time.perf_counter() - started
 
     def predict(self, image: Image.Image, key: str) -> dict:
+        # 1. Загрузить модель. 2. Подготовить её вход. 3. Получить и проверить ответ.
         started = time.perf_counter()
         try:
             import torch

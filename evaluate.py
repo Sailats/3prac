@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from predict import LABELS, MODEL_KEYS, PROMPTS, ROOT, ModelRunner, prepare_image
-from download_models import MODEL_SPECS
+from support.download_models import MODEL_SPECS
 
 OUTCOMES = (*LABELS, 'unknown', 'invalid', 'error')
 
@@ -50,7 +50,7 @@ def load_manifest(split='test') -> list:
         return [row for row in csv.DictReader(stream) if row['split'] == split]
 
 
-def run_evaluation(split='test', runner=None, progress=None) -> dict:
+def run_evaluation(split='test', runner=None) -> dict:
     runner = runner or ModelRunner()
     samples = load_manifest(split)
     rows = []
@@ -58,8 +58,7 @@ def run_evaluation(split='test', runner=None, progress=None) -> dict:
     warmup = {}
     warm_image = prepare_image((ROOT / 'data' / load_manifest('dev')[0]['file']).read_bytes())
     for key in MODEL_KEYS:
-        if progress:
-            progress(0, len(samples) * 2, f'Загрузка и прогрев {MODEL_SPECS[key]["name"]}')
+        print(f'Warmup: {MODEL_SPECS[key]["name"]}', flush=True)
         warmup[key] = runner.predict(warm_image, key)
         if warmup[key]['label'] == 'error':
             raise RuntimeError(warmup[key]['error'])
@@ -71,8 +70,7 @@ def run_evaluation(split='test', runner=None, progress=None) -> dict:
             result = runner.predict(image, key)
             rows.append({'id': sample['id'], 'file': sample['file'],
                          'truth': sample['label'], **result})
-            if progress:
-                progress(len(rows), len(samples) * 2, f'{sample["id"]}: {MODEL_SPECS[key]["name"]}')
+            print(f'{len(rows)}/{len(samples) * 2}: {sample["id"]} {key}', flush=True)
     summaries = {}
     for key in MODEL_KEYS:
         subset = [row for row in rows if row['model'] == key]
@@ -84,6 +82,7 @@ def run_evaluation(split='test', runner=None, progress=None) -> dict:
     import transformers
     report = {
         'created_utc': datetime.now(timezone.utc).isoformat(), 'split': split,
+        'application_version': '3.0-simple',
         'prompts': PROMPTS,
         'prompts_sha256': hashlib.sha256(json.dumps(PROMPTS, sort_keys=True).encode()).hexdigest(),
         'manifest_sha256': hashlib.sha256((ROOT / 'data/manifest.csv').read_bytes()).hexdigest(),
@@ -120,6 +119,5 @@ if __name__ == '__main__':
     parser.add_argument('--split', choices=['dev', 'test'], default='test')
     parser.add_argument('--device', choices=['auto', 'cpu', 'cuda'], default='auto')
     args = parser.parse_args()
-    report = run_evaluation(args.split, ModelRunner(args.device),
-                            lambda done, total, message: print(f'{done}/{total}: {message}', flush=True))
+    report = run_evaluation(args.split, ModelRunner(args.device))
     print(json.dumps(report['metrics'], ensure_ascii=False, indent=2))

@@ -15,7 +15,7 @@ def source_files():
         if not path.is_file():
             continue
         relative = path.relative_to(ROOT)
-        if any(part in ('.git', 'models', '.runtime', '.venv', '__pycache__', 'superpowers')
+        if any(part in ('.git', '.superpowers', 'models', '.runtime', '.venv', '__pycache__', 'superpowers')
                or part.endswith('.parts') for part in relative.parts):
             continue
         if path.name in ('.local-python.txt', '.local-models.txt', 'progress.md', 'interface-initial.png'):
@@ -70,7 +70,7 @@ def main():
     files = list(sources)
     from sys import path as search_path
     search_path.insert(0, str(ROOT))
-    from download_models import MODEL_SPECS, models_directory
+    from support.download_models import MODEL_SPECS, models_directory
     for spec in MODEL_SPECS.values():
         model_root = models_directory() / spec['folder']
         for path in model_root.iterdir():

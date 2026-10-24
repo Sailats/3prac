@@ -33,7 +33,7 @@ try {
         Invoke-WebRequest -UseBasicParsing -Uri 'https://bootstrap.pypa.io/get-pip.py' -OutFile $getPip
         Run-Python -PythonArgs @($getPip, '--no-warn-script-location')
     }
-    $marker = Join-Path (Split-Path -Parent $projectPython) 'text-project-ready-v2.txt'
+    $marker = Join-Path (Split-Path -Parent $projectPython) 'text-project-ready-v3.txt'
     if (-not (Test-Path -LiteralPath $marker)) {
         Write-Host 'Устанавливаются библиотеки. Нужен интернет, оплата не требуется.'
         $useGpu = (-not $Cpu) -and ($null -ne (Get-Command nvidia-smi.exe -ErrorAction SilentlyContinue))
@@ -50,7 +50,7 @@ try {
         Run-Python -PythonArgs @('-c', "import torch, transformers, PIL; print('Libraries ready')")
         [IO.File]::WriteAllText($marker, 'ready', [Text.Encoding]::ASCII)
     }
-    Run-Python -PythonArgs @((Join-Path $projectRoot 'download_models.py'))
+    Run-Python -PythonArgs @('-m', 'support.download_models')
     if ($Check) {
         Run-Python -PythonArgs @('-m', 'unittest', 'discover', '-s', 'tests', '-v')
         Run-Python -PythonArgs @('-c', "import torch; print('Torch:',torch.__version__); print('GPU:',torch.cuda.is_available())")
